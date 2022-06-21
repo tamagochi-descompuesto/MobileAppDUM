@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.TerminosCondiciones">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.- Privacidad de datos del usuario."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Al hacer uso de esta aplicación y realizar el registro de un perfil de usuario se da un consentimiento sobre el uso de los datos proporcionados para que la Fundación Dibujando Un Mañana pueda almacenarlos en su base de datos y consultarlos cuando así lo crea necesario la fundación. La recabación de datos será únicamente con la finalidad de poder identificar al usuario y posteriormente poder realizar las transacciones monetarias a la hora de realizar un donativo. \nNingún usuario deberá tener acceso a los datos de otros, en caso de tenerlo se llevarán a cabo las acciones legales correspondientes. Queda prohibido hacer uso de los datos del usuario de cualquier forma no establecida en este documento. Así mismo, no se permite ingresar datos falsos o incorrectos que impidan localizar o identificar al usuario del perfil registrado, cualquiera incumplimiento de lo anteriormente mencionado será considerado como una falta a los términos de usuario y se procederán a aplicar los procedimientos legales correspondientes."
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.- Edad del usuario."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Al registrarse en la aplicación, se asume que el usuario cuenta con la mayoría de edad legal en su país de origen, debido a la naturaleza de los datos que se están ingresando, y serán tratados como personas mayores de edad. Por tal motivo, la organización no se hace responsable de las consecuencias que pueda traer si menores se registran en ella y hacen uso de datos personales ajenos. Es por eso que, al darse de alta en la aplicación, al usuario se le dará aviso que para aceptar los términos y condiciones y poder usar la aplicación se deberá de contar con la mayoría de edad."
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.- Incentivos económicos."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Al ser usuario de esta aplicación, cada persona que realice una donación debe comprometerse y asegurar que el dinero dirigido a Fundación Dibujando un Mañana tiene un origen de carácter legal. Esto quiere decir que el dinero utilizado en la transacción no se obtuvo por medio de la realización de actividades ilícitas, tales como el crimen organizado u otras acciones sancionadas por la ley. Esto debido a que la organización es capaz de expedir al usuario una factura con valor fiscal para la deducción de sus impuestos que, a su vez, puede ser interpretado por las autoridades del Servicio de Administración Tributaria como posible lavado de dinero y, por consecuencia, la organización puede ser sancionada"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.- Contacto de la fundación."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="El contacto con la Fundación Dibujando Un Mañana deberá de ser utilizado únicamente bajo situaciones serias que lo requieran. Queda prohibido usar este medio para enviar correos con mensajes de odio, malware, spam y cualquier otro asunto que pueda dañar el canal de comunicación entre el usuario y la fundación y que, además, dificulten las operaciones de Fundación Dibujando un Mañana.\nLos medios de contacto de la fundación deberán estar siempre visibles y a disposición de los usuarios en caso de presentar cualquier duda, aclaración o situación que requiera atención por parte de la fundación para proporcionar una atención satisfactoria y así mismo los usuarios tengan plena confianza y buenas referencias de la fundación, cualquier uso inadecuado de estos medios tendrán consecuencias sobre el usuario que lo efectúe."
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.- Difusión de la aplicación."
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Al usar esta aplicación, está totalmente prohibida la distribución por cualquier medio no autorizado por la fundación. En caso de ser sorprendido vandalizando o no respetando la propiedad intelectual del equipo desarrollador, se llevarán a cabo los procedimientos legales correspondientes y el/los usuario/s en cuestión quedarán permanentemente restringidos del uso de esta aplicación de manera permanente.\nAsí mismo, queda prohibido la modificación del código fuente de la aplicación para cualquier fin que no vaya acorde con los fines de la Fundación Dibujando Un Mañana y con los que la aplicación fue creada. En caso de haber algún tipo de modificación del código y distribución de este se procederá conforme a la ley y será considerado como violación a los derechos de autor de los desarrolladores y, si aplica al caso, podrá ser considerado como un cibercrimen dependiendo de los fines con los que se haya alterado el código."
+                android:textAlignment="viewStart" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

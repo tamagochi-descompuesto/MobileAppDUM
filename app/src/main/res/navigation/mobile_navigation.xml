@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_inicio">
+
+    <fragment
+        android:id="@+id/nav_inicio"
+        android:name="com.example.appdum.ui.Inicio.HomeFragment"
+        android:label="@string/menu_inicio"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_perfil"
+        android:name="com.example.appdum.ui.Perfil.GalleryFragment"
+        android:label="@string/menu_perfil"
+        tools:layout="@layout/fragment_perfil">
+        <action
+            android:id="@+id/action_nav_perfil_to_nav_editarPerfil"
+            app:destination="@id/nav_editarPerfil" />
+        <argument
+            android:name="correo"
+            android:defaultValue="contacto@dibujando.org" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_donacion"
+        android:name="com.example.appdum.ui.donaciones.SlideshowFragment"
+        android:label="@string/menu_donaciones"
+        tools:layout="@layout/fragment_donaciones" />
+    <fragment
+        android:id="@+id/nav_contacto"
+        android:name="com.example.appdum.view.nav_contacto"
+        android:label="Contacto"
+        tools:layout="@layout/nav_contacto_fragment" />
+    <fragment
+        android:id="@+id/nav_editarPerfil"
+        android:name="com.example.appdum.view.nav_editarPerfil"
+        android:label="Editar perfil"
+        tools:layout="@layout/nav_editar_perfil_fragment" />
+    <fragment
+        android:id="@+id/nav_cerrar_sesion"
+        android:name="com.example.appdum.view.cerrarSesion"
+        android:label="cerrar_sesion_fragment"
+        tools:layout="@layout/cerrar_sesion_fragment" />
+    <fragment
+        android:id="@+id/nav_admin"
+        android:name="com.example.appdum.view.AdminFragment"
+        android:label="Administración"
+        tools:layout="@layout/admin_fragment" >
+        <action
+            android:id="@+id/action_nav_admin_to_gestionUsuario"
+            app:destination="@id/gestionUsuario" />
+    </fragment>
+    <fragment
+        android:id="@+id/gestionUsuario"
+        android:name="com.example.appdum.view.GestionUsuario"
+        android:label="Gestión de Usuario"
+        tools:layout="@layout/gestion_usuario_fragment">
+        <argument
+            android:name="usuario"
+            app:argType="com.example.appdum.model.UsuarioCompleto" />
+        <action
+            android:id="@+id/action_gestionUsuario_to_gestionDonacion2"
+            app:destination="@id/gestionDonacion" />
+    </fragment>
+    <fragment
+        android:id="@+id/gestionDonacion"
+        android:name="com.example.appdum.view.GestionDonacion"
+        android:label="Gestión de donaciones"
+        tools:layout="@layout/gestion_donacion_fragment">
+        <argument
+            android:name="donacion"
+            app:argType="com.example.appdum.model.Donacion" />
+    </fragment>
+</navigation>
